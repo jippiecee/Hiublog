@@ -9,3 +9,14 @@ export const toLocalInput = (iso: string) => {
   const d = new Date(iso); d.setMinutes(d.getMinutes() - d.getTimezoneOffset())
   return d.toISOString().slice(0, 16)
 }
+const esc = (s: string) =>
+  s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;').replace(/'/g, '&#39;')
+// Teks aman (di-escape) dengan kata pencarian dibungkus <mark>. Dipakai bareng v-html.
+export const highlightText = (text = '', q = '') => {
+  const words = q.trim().split(/\s+/).filter(Boolean).map((w) => w.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'))
+  if (!words.length) return esc(text)
+  return text
+    .split(new RegExp(`(${words.join('|')})`, 'gi'))
+    .map((p, i) => (i % 2 ? `<mark class="rounded bg-soft px-0.5 text-ink">${esc(p)}</mark>` : esc(p)))
+    .join('')
+}

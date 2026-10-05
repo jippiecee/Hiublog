@@ -10,6 +10,7 @@ const user = useSupabaseUser()
           HiuBlog
         </NuxtLink>
         <nav class="flex items-center gap-1 text-sm font-bold">
+          <SearchPalette />
           <NuxtLink to="/" class="px-3 py-1.5 rounded-lg hover:bg-surface2" active-class="bg-surface2">Beranda</NuxtLink>
           <NuxtLink v-if="user" to="/admin" class="px-3 py-1.5 rounded-lg hover:bg-surface2" active-class="bg-surface2">Admin</NuxtLink>
         </nav>
