@@ -11,7 +11,12 @@ export default defineNuxtConfig({
       title: 'HiuBlog',
       link: [
         { rel: 'preconnect', href: 'https://fonts.googleapis.com' },
-        { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&display=swap' }
+        { rel: 'preconnect', href: 'https://api.fontshare.com' },
+        { rel: 'preconnect', href: 'https://cdn.fontshare.com', crossorigin: '' },
+        { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&display=swap' },
+        { rel: 'stylesheet', href: 'https://api.fontshare.com/v2/css?f[]=switzer@400,500,600,700,800&display=swap' },
+        { rel: 'icon', type: 'image/svg+xml', href: '/favicon.svg' },
+        { rel: 'apple-touch-icon', href: '/apple-touch-icon.png' },
       ]
     }
   }

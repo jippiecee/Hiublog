@@ -73,11 +73,11 @@ onMounted(() => window.addEventListener('keydown', onKey))
 onBeforeUnmount(() => { window.removeEventListener('keydown', onKey); document.body.style.overflow = '' })
 </script>
 <template>
-  <button type="button" class="mr-1 flex h-9 items-center gap-2 rounded-lg px-2.5 text-muted transition hover:bg-surface2 hover:text-ink sm:border sm:border-line sm:bg-surface sm:pl-3 sm:pr-2" aria-label="Cari tulisan" @click="show">
+  <button type="button" class="flex min-h-11 items-center gap-2 rounded-full border border-line bg-bg px-3.5 text-sm font-bold text-ink transition hover:bg-surface2 sm:px-4" aria-label="Cari tulisan" @click="show">
     <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7" /><path d="m20 20-3.5-3.5" /></svg>
-    <span class="hidden text-sm font-semibold sm:inline">Cari</span>
+    <span class="hidden sm:inline">Cari</span>
   </button>
-
+  
   <Teleport to="body">
     <div v-if="open" class="fixed inset-0 z-[60] bg-ink/30 p-3 backdrop-blur-sm sm:p-6 sm:pt-[12vh]" @click.self="hide">
       <div class="mx-auto w-full max-w-xl overflow-hidden rounded-2xl border border-line bg-bg shadow-2xl" role="dialog" aria-modal="true" aria-label="Cari tulisan">
