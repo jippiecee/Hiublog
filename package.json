@@ -1,0 +1,13 @@
+{
+  "name": "hiublog",
+  "private": true,
+  "type": "module",
+  "scripts": { "dev": "nuxt dev", "build": "nuxt build", "preview": "nuxt preview", "postinstall": "nuxt prepare" },
+  "dependencies": {
+    "@nuxtjs/supabase": "^1.4.0",
+    "@nuxtjs/tailwindcss": "^6.12.0",
+    "marked": "^14.1.0",
+    "nuxt": "^3.13.0",
+    "vue": "latest"
+  }
+}

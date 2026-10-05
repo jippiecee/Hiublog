@@ -1,0 +1,26 @@
+@tailwind base; @tailwind components; @tailwind utilities;
+:root{--bg:247 250 242;--surface:239 244 231;--surface2:229 237 219;--primary:63 91 46;--primary-hover:44 68 31;--on-primary:255 255 255;--soft:196 236 153;--ink:22 30 17;--muted:84 92 78;--line:208 218 195}
+html{scroll-behavior:smooth}
+body{@apply bg-bg text-ink font-sans antialiased}
+:focus-visible{outline:2px solid rgb(var(--primary));outline-offset:2px}
+::selection{background:rgb(var(--soft));color:rgb(var(--ink))}
+.btn{@apply inline-flex items-center justify-center gap-2 rounded-xl px-4 py-2.5 text-sm font-bold transition active:scale-[.98] disabled:bg-line disabled:text-muted disabled:cursor-not-allowed}
+.btn-primary{@apply bg-primary text-on-primary}
+.btn-primary:hover:not(:disabled){background:rgb(var(--primary-hover))}
+.btn-ghost{@apply bg-surface2 text-ink}
+.btn-ghost:hover{background:rgb(var(--line))}
+.field{@apply w-full rounded-xl border border-line bg-surface px-4 py-2.5 text-sm text-ink placeholder:text-muted focus:outline-none focus:border-primary}
+.prose-hiu{@apply font-serif text-[1.15rem] leading-[1.85] max-w-[68ch]}
+.prose-hiu h2{@apply font-serif text-3xl mt-10 mb-3}
+.prose-hiu h3{@apply font-serif text-2xl mt-8 mb-2}
+.prose-hiu p{@apply my-4}
+.prose-hiu strong{@apply font-bold}
+.prose-hiu a{@apply text-primary underline underline-offset-4}
+.prose-hiu ul{@apply list-disc pl-6 my-4}
+.prose-hiu ol{@apply list-decimal pl-6 my-4}
+.prose-hiu blockquote{@apply border-l-4 border-primary pl-4 italic text-muted my-6}
+.prose-hiu code{@apply bg-surface2 rounded px-1.5 py-0.5 text-[.9em] font-mono}
+.prose-hiu pre{@apply bg-surface2 rounded-xl p-4 my-6 overflow-x-auto text-sm}
+.prose-hiu pre code{@apply bg-transparent p-0}
+.prose-hiu img{@apply rounded-xl my-6 max-w-full}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
