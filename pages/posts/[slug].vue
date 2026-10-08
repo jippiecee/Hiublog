@@ -54,7 +54,7 @@ useSeoMeta({ description: post.value.excerpt, ogTitle: post.value.title })
     <h1 class="mt-6 font-serif text-4xl md:text-5xl font-semibold leading-tight">{{ post.title }}</h1>
     <p class="mt-4 text-sm text-muted">{{ fmtDate(post.published_at) }} · {{ readTime(post.content) }} menit baca</p>
     <div class="mt-4 flex flex-wrap gap-1.5">
-      <NuxtLink v-for="t in post.tags" :key="t" :to="{ path: '/', query: { tag: t } }" class="rounded-full bg-surface2 px-2.5 py-0.5 text-xs text-muted hover:text-primary">{{ t }}</NuxtLink>
+      <NuxtLink v-for="t in post.tags" :key="t" :to="{ path: '/', query: { tag: t } }" class="rounded-full bg-primary px-3 py-1 text-xs font-bold text-soft transition hover:opacity-80">{{ t }}</NuxtLink>
     </div>
 
     <!-- Daftar isi (muncul kalau ada 3 heading atau lebih) -->

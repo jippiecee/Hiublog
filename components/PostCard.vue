@@ -9,7 +9,7 @@ defineProps<{ post: any; q?: string }>()
       <p class="mt-2 text-sm text-muted leading-relaxed line-clamp-3" v-html="highlightText(post.excerpt, q)" />
     </div>
     <div class="mt-5 flex flex-wrap gap-1.5">
-      <span v-for="t in post.tags" :key="t" class="rounded-full bg-surface2 px-2.5 py-0.5 text-xs text-muted">{{ t }}</span>
+      <span v-for="t in post.tags" :key="t" class="rounded-full bg-primary px-3 py-1 text-xs font-bold text-soft">{{ t }}</span>
     </div>
   </NuxtLink>
 </template>
