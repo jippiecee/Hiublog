@@ -31,7 +31,7 @@ const results = computed<any[]>(() => {
     const title = (p.title || '').toLowerCase()
     const tags = (p.tags || []).join(' ').toLowerCase()
     const ex = (p.excerpt || '').toLowerCase()
-    const body = (p.content || '').toLowerCase()
+   const body = (p.content || '').replace(/!\[[^\]]*\]\([^)]*\)/g, ' ').toLowerCase() 
     let score = 0, ok = true
     for (const x of w) {
       const s = (title.includes(x) ? 3 : 0) + (tags.includes(x) ? 2 : 0) + (ex.includes(x) ? 2 : 0) + (body.includes(x) ? 1 : 0)
@@ -48,7 +48,7 @@ const snippet = (p: any) => {
   const ex: string = p.excerpt || ''
   const w = words.value
   if (!w.length || w.some((x) => ex.toLowerCase().includes(x))) return ex
-  const text = (p.content || '').replace(/[#*_`>\[\]]/g, '').replace(/\s+/g, ' ')
+  const text = (p.content || '').replace(/!\[[^\]]*\]\([^)]*\)/g, ' ').replace(/[#*_`>\[\]]/g, '').replace(/\s+/g, ' ')
   const i = text.toLowerCase().indexOf(w[0])
   if (i < 0) return ex
   const start = Math.max(0, i - 50)

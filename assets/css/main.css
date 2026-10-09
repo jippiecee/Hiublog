@@ -22,5 +22,12 @@ body{@apply bg-bg text-ink font-sans antialiased}
 .prose-hiu code{@apply bg-surface2 rounded px-1.5 py-0.5 text-[.9em] font-mono}
 .prose-hiu pre{@apply bg-surface2 rounded-xl p-4 my-6 overflow-x-auto text-sm}
 .prose-hiu pre code{@apply bg-transparent p-0}
-.prose-hiu img{@apply rounded-xl my-6 max-w-full}
+.prose-hiu img{@apply rounded-xl max-w-full}
+.prose-hiu .post-fig{@apply my-7}
+.prose-hiu .post-fig img{@apply block w-full h-auto rounded-xl}
+.prose-hiu .post-fig figcaption{@apply mt-2 text-center font-sans text-[.8rem] leading-snug text-muted}
+.prose-hiu .photos{@apply my-7 grid gap-3 sm:grid-cols-2}
+.prose-hiu .photos-3{@apply sm:grid-cols-3}
+.prose-hiu .photos .post-fig{@apply my-0}
+.prose-hiu .photos .post-fig img{@apply aspect-[4/3] object-cover}
 @media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
