@@ -26,9 +26,9 @@ const off = 'text-muted hover:bg-surface2 hover:text-ink'
     <main class="flex-1"><slot /></main>
     <footer class="border-t border-line">
       <div class="mx-auto max-w-5xl px-5 py-8 flex flex-wrap items-center justify-between gap-x-6 gap-y-3 text-sm text-muted">
-        <p>© {{ new Date().getFullYear() }} HiuBlog. Ditulis Hiu, ditemani matcha.</p>
+        <p>© {{ new Date().getFullYear() }} HiuBlog, Created by Jippiecee.</p>
         <div class="flex flex-wrap items-center gap-x-5 gap-y-2">
-          <a href="https://GANTI-URL-PORTFOLIO" target="_blank" rel="noopener" class="hover:text-primary">Portfolio</a>
+          <a href="https://hanifibrrhmm.netlify.app/" target="_blank" rel="noopener" class="hover:text-primary">Portfolio</a>
           <a href="https://github.com/jippiecee" target="_blank" rel="noopener" class="hover:text-primary">GitHub</a>
           <a href="https://www.youtube.com/@hanif_Ibrahim" target="_blank" rel="noopener" class="hover:text-primary">YouTube</a>
           <NuxtLink v-if="!user" to="/login" class="hover:text-primary">Masuk</NuxtLink>
