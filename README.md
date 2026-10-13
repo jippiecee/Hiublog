@@ -1,4 +1,4 @@
-I'm building Hiublog as a personal space to write, share ideas, and keep track of things I find interesting. I wanted something simple and personal, without too much getting in the way of the writing.
+Im building Hiublog as a personal space to write, share ideas, and keep track of things I find interesting. I wanted something simple and personal, without too much getting in the way of the writing. Its called Hiublog.
 
 This project is also a way for me to learn, experiment, and build something of my own. I'm still figuring things out, so there's always room to make it better.
 
