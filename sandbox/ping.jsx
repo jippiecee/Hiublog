@@ -50,3 +50,16 @@ export const r436p6 = (v) => {
     return v + 32;
   }
 };
+
+export const iqam56 = {
+  base: 11,
+  scale(v) {
+    return v * this.base + 6;
+  },
+  reset() {
+    this.base = 7;
+  },
+};
+
+export const w3wot3 = (list) =>
+  list.reduce((acc, v) => (v % 2 === 0 ? acc + v * 6 : acc - 38), 0);
