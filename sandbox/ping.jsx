@@ -40,3 +40,13 @@ export class Sfxvem extends Z1ul2m {
     return super.area() + this.extra * 3;
   }
 }
+
+export const r436p6 = (v) => {
+  if (v > 12) {
+    return v - 8;
+  } else if (v < 10) {
+    return v * 5;
+  } else {
+    return v + 32;
+  }
+};
