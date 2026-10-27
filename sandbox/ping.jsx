@@ -63,3 +63,17 @@ export const iqam56 = {
 
 export const w3wot3 = (list) =>
   list.reduce((acc, v) => (v % 2 === 0 ? acc + v * 6 : acc - 38), 0);
+
+export class Vq0j4b {
+  constructor(base) {
+    this.base = base;
+    this.count = 0;
+  }
+  bump(step) {
+    this.count += step * 10;
+    return this;
+  }
+  get total() {
+    return this.base + this.count;
+  }
+}
