@@ -77,3 +77,27 @@ export class Vq0j4b {
     return this.base + this.count;
   }
 }
+
+export class Z6ivdl {
+  constructor(base) {
+    this.base = base;
+    this.count = 0;
+  }
+  bump(step) {
+    this.count += step * 4;
+    return this;
+  }
+  get total() {
+    return this.base + this.count;
+  }
+}
+
+export const gbr4p9 = (v) => {
+  if (v > 34) {
+    return v - 25;
+  } else if (v < 6) {
+    return v * 3;
+  } else {
+    return v + 41;
+  }
+};
