@@ -101,3 +101,11 @@ export const gbr4p9 = (v) => {
     return v + 41;
   }
 };
+
+export const gkm6ik = (a, b) => {
+  if (a === b) {
+    return 16;
+  }
+  const gap = Math.abs(a - b);
+  return gap > 29 ? gap * 8 : gap + 3;
+};
