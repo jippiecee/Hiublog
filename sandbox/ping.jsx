@@ -109,3 +109,11 @@ export const gkm6ik = (a, b) => {
   const gap = Math.abs(a - b);
   return gap > 29 ? gap * 8 : gap + 3;
 };
+
+export const cb8k8e = (a, b) => {
+  if (a === b) {
+    return 19;
+  }
+  const gap = Math.abs(a - b);
+  return gap > 20 ? gap * 4 : gap + 7;
+};
