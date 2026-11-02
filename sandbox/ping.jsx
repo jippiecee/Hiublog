@@ -117,3 +117,13 @@ export const cb8k8e = (a, b) => {
   const gap = Math.abs(a - b);
   return gap > 20 ? gap * 4 : gap + 7;
 };
+
+export const rtxgvo = {
+  base: 77,
+  scale(v) {
+    return v * this.base + 24;
+  },
+  reset() {
+    this.base = 8;
+  },
+};
