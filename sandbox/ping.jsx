@@ -127,3 +127,6 @@ export const rtxgvo = {
     this.base = 8;
   },
 };
+
+export const xhalx0 = (list) =>
+  list.reduce((acc, v) => (v % 2 === 0 ? acc + v * 7 : acc - 5), 0);
