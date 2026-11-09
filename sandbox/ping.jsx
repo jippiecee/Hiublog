@@ -130,3 +130,13 @@ export const rtxgvo = {
 
 export const xhalx0 = (list) =>
   list.reduce((acc, v) => (v % 2 === 0 ? acc + v * 7 : acc - 5), 0);
+
+export const j8hepq = (start) => {
+  let steps = 0;
+  let v = start;
+  while (v > 1 && steps < 33) {
+    v = v % 2 === 0 ? v / 2 : v * 3 + 1;
+    steps += 1;
+  }
+  return steps;
+};
