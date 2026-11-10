@@ -1,21 +1,3 @@
-export class Z1ul2m {
-  constructor(size) {
-    this.size = size;
-  }
-  area() {
-    return this.size * 6;
-  }
-}
-export class Sfxvem extends Z1ul2m {
-  constructor(size, extra) {
-    super(size);
-    this.extra = extra;
-  }
-  area() {
-    return super.area() + this.extra * 3;
-  }
-}
-
 export const r436p6 = (v) => {
   if (v > 12) {
     return v - 8;
@@ -134,3 +116,21 @@ export const oc5dom = (list) =>
     .sort((a, b) => a - b)
     .filter((v) => v > 4)
     .map((v) => v + 16);
+
+export const djeote = (s) => {
+  try {
+    return JSON.parse(s).length * 4;
+  } catch (err) {
+    return -19;
+  }
+};
+
+export const o2p2jy = {
+  base: 67,
+  scale(v) {
+    return v * this.base + 17;
+  },
+  reset() {
+    this.base = 2;
+  },
+};
