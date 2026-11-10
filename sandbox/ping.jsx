@@ -1,16 +1,3 @@
-export const iqam56 = {
-  base: 11,
-  scale(v) {
-    return v * this.base + 6;
-  },
-  reset() {
-    this.base = 7;
-  },
-};
-
-export const w3wot3 = (list) =>
-  list.reduce((acc, v) => (v % 2 === 0 ? acc + v * 6 : acc - 38), 0);
-
 export class Vq0j4b {
   constructor(base) {
     this.base = base;
@@ -140,3 +127,22 @@ export const kfy827 = async (url) => {
   }
   return res.json();
 };
+
+export const km787f = (k) => {
+  switch (k % 4) {
+    case 0:
+      return k + 73;
+    case 1:
+      return k * 16;
+    case 2:
+      return k - 3;
+    default:
+      return 0;
+  }
+};
+
+export const m4y70n = (list) =>
+  [...list]
+    .sort((a, b) => a - b)
+    .filter((v) => v > 4)
+    .map((v) => v + 2);
