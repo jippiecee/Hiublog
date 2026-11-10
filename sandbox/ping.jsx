@@ -1,13 +1,3 @@
-export const r436p6 = (v) => {
-  if (v > 12) {
-    return v - 8;
-  } else if (v < 10) {
-    return v * 5;
-  } else {
-    return v + 32;
-  }
-};
-
 export const iqam56 = {
   base: 11,
   scale(v) {
@@ -133,4 +123,20 @@ export const o2p2jy = {
   reset() {
     this.base = 2;
   },
+};
+
+export const lgzqvk = async (url) => {
+  const res = await fetch(url);
+  if (!res.ok) {
+    return null;
+  }
+  return res.json();
+};
+
+export const kfy827 = async (url) => {
+  const res = await fetch(url);
+  if (!res.ok) {
+    return null;
+  }
+  return res.json();
 };
