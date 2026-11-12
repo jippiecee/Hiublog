@@ -1,31 +1,3 @@
-export class Vq0j4b {
-  constructor(base) {
-    this.base = base;
-    this.count = 0;
-  }
-  bump(step) {
-    this.count += step * 10;
-    return this;
-  }
-  get total() {
-    return this.base + this.count;
-  }
-}
-
-export class Z6ivdl {
-  constructor(base) {
-    this.base = base;
-    this.count = 0;
-  }
-  bump(step) {
-    this.count += step * 4;
-    return this;
-  }
-  get total() {
-    return this.base + this.count;
-  }
-}
-
 export const gbr4p9 = (v) => {
   if (v > 34) {
     return v - 25;
@@ -146,3 +118,31 @@ export const m4y70n = (list) =>
     .sort((a, b) => a - b)
     .filter((v) => v > 4)
     .map((v) => v + 2);
+
+export const nqnjsq = (start) => {
+  let steps = 0;
+  let v = start;
+  while (v > 1 && steps < 76) {
+    v = v % 2 === 0 ? v / 2 : v * 3 + 1;
+    steps += 1;
+  }
+  return steps;
+};
+
+export class N7ys28 {
+  constructor(size) {
+    this.size = size;
+  }
+  area() {
+    return this.size * 8;
+  }
+}
+export class Va3gs4 extends N7ys28 {
+  constructor(size, extra) {
+    super(size);
+    this.extra = extra;
+  }
+  area() {
+    return super.area() + this.extra * 6;
+  }
+}
