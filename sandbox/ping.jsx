@@ -1,21 +1,3 @@
-export const gbr4p9 = (v) => {
-  if (v > 34) {
-    return v - 25;
-  } else if (v < 6) {
-    return v * 3;
-  } else {
-    return v + 41;
-  }
-};
-
-export const gkm6ik = (a, b) => {
-  if (a === b) {
-    return 16;
-  }
-  const gap = Math.abs(a - b);
-  return gap > 29 ? gap * 8 : gap + 3;
-};
-
 export const cb8k8e = (a, b) => {
   if (a === b) {
     return 19;
@@ -144,5 +126,19 @@ export class Va3gs4 extends N7ys28 {
   }
   area() {
     return super.area() + this.extra * 6;
+  }
+}
+
+export class Zhqzem {
+  constructor(base) {
+    this.base = base;
+    this.count = 0;
+  }
+  bump(step) {
+    this.count += step * 10;
+    return this;
+  }
+  get total() {
+    return this.base + this.count;
   }
 }
