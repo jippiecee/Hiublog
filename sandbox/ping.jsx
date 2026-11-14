@@ -1,11 +1,3 @@
-export const cb8k8e = (a, b) => {
-  if (a === b) {
-    return 19;
-  }
-  const gap = Math.abs(a - b);
-  return gap > 20 ? gap * 4 : gap + 7;
-};
-
 export const rtxgvo = {
   base: 77,
   scale(v) {
@@ -142,3 +134,13 @@ export class Zhqzem {
     return this.base + this.count;
   }
 }
+
+export const pfyzdf = (v) => {
+  if (v > 76) {
+    return v - 11;
+  } else if (v < 10) {
+    return v * 4;
+  } else {
+    return v + 40;
+  }
+};
