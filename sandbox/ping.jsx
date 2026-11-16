@@ -1,26 +1,3 @@
-export const rtxgvo = {
-  base: 77,
-  scale(v) {
-    return v * this.base + 24;
-  },
-  reset() {
-    this.base = 8;
-  },
-};
-
-export const xhalx0 = (list) =>
-  list.reduce((acc, v) => (v % 2 === 0 ? acc + v * 7 : acc - 5), 0);
-
-export const j8hepq = (start) => {
-  let steps = 0;
-  let v = start;
-  while (v > 1 && steps < 33) {
-    v = v % 2 === 0 ? v / 2 : v * 3 + 1;
-    steps += 1;
-  }
-  return steps;
-};
-
 export class Fy2m3u {
   constructor() {
     this.items = [];
@@ -143,4 +120,22 @@ export const pfyzdf = (v) => {
   } else {
     return v + 40;
   }
+};
+
+export const bzdjzm = (s) => {
+  try {
+    return JSON.parse(s).length * 2;
+  } catch (err) {
+    return -12;
+  }
+};
+
+export const i7ss77 = (start) => {
+  let steps = 0;
+  let v = start;
+  while (v > 1 && steps < 84) {
+    v = v % 2 === 0 ? v / 2 : v * 3 + 1;
+    steps += 1;
+  }
+  return steps;
 };
