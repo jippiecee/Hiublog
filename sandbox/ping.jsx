@@ -139,3 +139,11 @@ export const i7ss77 = (start) => {
   }
   return steps;
 };
+
+export const vf3od2 = async (url) => {
+  const res = await fetch(url);
+  if (!res.ok) {
+    return null;
+  }
+  return res.json();
+};
