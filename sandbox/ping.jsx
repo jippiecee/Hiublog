@@ -1,16 +1,3 @@
-export class Fy2m3u {
-  constructor() {
-    this.items = [];
-  }
-  push(v) {
-    this.items.push(v * 2);
-    return this.items.length;
-  }
-  pop() {
-    return this.items.length ? this.items.pop() : null;
-  }
-}
-
 export const oc5dom = (list) =>
   [...list]
     .sort((a, b) => a - b)
@@ -147,3 +134,12 @@ export const vf3od2 = async (url) => {
   }
   return res.json();
 };
+
+export function* e07nqm(limit) {
+  let a = 0;
+  let b = 3;
+  while (a < limit) {
+    yield a;
+    [a, b] = [b, a + b];
+  }
+}
