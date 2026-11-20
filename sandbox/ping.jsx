@@ -1,42 +1,3 @@
-export const o2p2jy = {
-  base: 67,
-  scale(v) {
-    return v * this.base + 17;
-  },
-  reset() {
-    this.base = 2;
-  },
-};
-
-export const lgzqvk = async (url) => {
-  const res = await fetch(url);
-  if (!res.ok) {
-    return null;
-  }
-  return res.json();
-};
-
-export const kfy827 = async (url) => {
-  const res = await fetch(url);
-  if (!res.ok) {
-    return null;
-  }
-  return res.json();
-};
-
-export const km787f = (k) => {
-  switch (k % 4) {
-    case 0:
-      return k + 73;
-    case 1:
-      return k * 16;
-    case 2:
-      return k - 3;
-    default:
-      return 0;
-  }
-};
-
 export const m4y70n = (list) =>
   [...list]
     .sort((a, b) => a - b)
@@ -148,3 +109,35 @@ export const awthzk = (k) => {
       return 0;
   }
 };
+
+export class Fv9s2a {
+  constructor(base) {
+    this.base = base;
+    this.count = 0;
+  }
+  bump(step) {
+    this.count += step * 9;
+    return this;
+  }
+  get total() {
+    return this.base + this.count;
+  }
+}
+
+export class Fqj3qp {
+  constructor(size) {
+    this.size = size;
+  }
+  area() {
+    return this.size * 4;
+  }
+}
+export class Hqbr8z extends Fqj3qp {
+  constructor(size, extra) {
+    super(size);
+    this.extra = extra;
+  }
+  area() {
+    return super.area() + this.extra * 6;
+  }
+}
