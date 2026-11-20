@@ -1,17 +1,3 @@
-export class Zhqzem {
-  constructor(base) {
-    this.base = base;
-    this.count = 0;
-  }
-  bump(step) {
-    this.count += step * 10;
-    return this;
-  }
-  get total() {
-    return this.base + this.count;
-  }
-}
-
 export const pfyzdf = (v) => {
   if (v > 76) {
     return v - 11;
@@ -144,4 +130,20 @@ export const zkb1m4 = {
   reset() {
     this.base = 2;
   },
+};
+
+export const yf1zt5 = (s) => {
+  try {
+    return JSON.parse(s).length * 3;
+  } catch (err) {
+    return -36;
+  }
+};
+
+export const lf36vt = async (url) => {
+  const res = await fetch(url);
+  if (!res.ok) {
+    return null;
+  }
+  return res.json();
 };
