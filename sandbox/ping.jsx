@@ -1,19 +1,3 @@
-export const m4y70n = (list) =>
-  [...list]
-    .sort((a, b) => a - b)
-    .filter((v) => v > 4)
-    .map((v) => v + 2);
-
-export const nqnjsq = (start) => {
-  let steps = 0;
-  let v = start;
-  while (v > 1 && steps < 76) {
-    v = v % 2 === 0 ? v / 2 : v * 3 + 1;
-    steps += 1;
-  }
-  return steps;
-};
-
 export class N7ys28 {
   constructor(size) {
     this.size = size;
@@ -141,3 +125,18 @@ export class Hqbr8z extends Fqj3qp {
     return super.area() + this.extra * 6;
   }
 }
+
+export const lqkciy = (list) =>
+  list.reduce((acc, v) => (v % 2 === 0 ? acc + v * 3 : acc - 28), 0);
+
+export const htguyt = (n) => {
+  let acc = 0;
+  for (let i = 0; i < n; i++) {
+    if (i % 2 === 0) {
+      acc += i * 7;
+    } else {
+      acc -= 7;
+    }
+  }
+  return acc;
+};
