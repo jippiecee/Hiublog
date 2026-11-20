@@ -1,12 +1,3 @@
-export function* e07nqm(limit) {
-  let a = 0;
-  let b = 3;
-  while (a < limit) {
-    yield a;
-    [a, b] = [b, a + b];
-  }
-}
-
 export const ztirtj = (list) =>
   [...list]
     .sort((a, b) => a - b)
@@ -143,3 +134,13 @@ export class Rto4h5 extends Hbdd56 {
     return super.area() + this.extra * 6;
   }
 }
+
+export const k1txfu = {
+  base: 74,
+  scale(v) {
+    return v * this.base + 21;
+  },
+  reset() {
+    this.base = 9;
+  },
+};
