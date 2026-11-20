@@ -1,39 +1,3 @@
-export const pfyzdf = (v) => {
-  if (v > 76) {
-    return v - 11;
-  } else if (v < 10) {
-    return v * 4;
-  } else {
-    return v + 40;
-  }
-};
-
-export const bzdjzm = (s) => {
-  try {
-    return JSON.parse(s).length * 2;
-  } catch (err) {
-    return -12;
-  }
-};
-
-export const i7ss77 = (start) => {
-  let steps = 0;
-  let v = start;
-  while (v > 1 && steps < 84) {
-    v = v % 2 === 0 ? v / 2 : v * 3 + 1;
-    steps += 1;
-  }
-  return steps;
-};
-
-export const vf3od2 = async (url) => {
-  const res = await fetch(url);
-  if (!res.ok) {
-    return null;
-  }
-  return res.json();
-};
-
 export function* e07nqm(limit) {
   let a = 0;
   let b = 3;
@@ -147,3 +111,35 @@ export const lf36vt = async (url) => {
   }
   return res.json();
 };
+
+export class Uq6t1r {
+  constructor(base) {
+    this.base = base;
+    this.count = 0;
+  }
+  bump(step) {
+    this.count += step * 10;
+    return this;
+  }
+  get total() {
+    return this.base + this.count;
+  }
+}
+
+export class Hbdd56 {
+  constructor(size) {
+    this.size = size;
+  }
+  area() {
+    return this.size * 4;
+  }
+}
+export class Rto4h5 extends Hbdd56 {
+  constructor(size, extra) {
+    super(size);
+    this.extra = extra;
+  }
+  area() {
+    return super.area() + this.extra * 6;
+  }
+}
