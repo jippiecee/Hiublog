@@ -1,21 +1,3 @@
-export class N7ys28 {
-  constructor(size) {
-    this.size = size;
-  }
-  area() {
-    return this.size * 8;
-  }
-}
-export class Va3gs4 extends N7ys28 {
-  constructor(size, extra) {
-    super(size);
-    this.extra = extra;
-  }
-  area() {
-    return super.area() + this.extra * 6;
-  }
-}
-
 export class Zhqzem {
   constructor(base) {
     this.base = base;
@@ -139,4 +121,27 @@ export const htguyt = (n) => {
     }
   }
   return acc;
+};
+
+export const p30r6i = (k) => {
+  switch (k % 4) {
+    case 0:
+      return k + 37;
+    case 1:
+      return k * 29;
+    case 2:
+      return k - 3;
+    default:
+      return 0;
+  }
+};
+
+export const zkb1m4 = {
+  base: 18,
+  scale(v) {
+    return v * this.base + 17;
+  },
+  reset() {
+    this.base = 2;
+  },
 };
