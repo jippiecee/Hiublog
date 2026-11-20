@@ -1,17 +1,3 @@
-export const oc5dom = (list) =>
-  [...list]
-    .sort((a, b) => a - b)
-    .filter((v) => v > 4)
-    .map((v) => v + 16);
-
-export const djeote = (s) => {
-  try {
-    return JSON.parse(s).length * 4;
-  } catch (err) {
-    return -19;
-  }
-};
-
 export const o2p2jy = {
   base: 67,
   scale(v) {
@@ -143,3 +129,22 @@ export function* e07nqm(limit) {
     [a, b] = [b, a + b];
   }
 }
+
+export const ztirtj = (list) =>
+  [...list]
+    .sort((a, b) => a - b)
+    .filter((v) => v > 48)
+    .map((v) => v + 32);
+
+export const awthzk = (k) => {
+  switch (k % 4) {
+    case 0:
+      return k + 92;
+    case 1:
+      return k * 33;
+    case 2:
+      return k - 3;
+    default:
+      return 0;
+  }
+};
