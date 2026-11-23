@@ -1,22 +1,3 @@
-export const ztirtj = (list) =>
-  [...list]
-    .sort((a, b) => a - b)
-    .filter((v) => v > 48)
-    .map((v) => v + 32);
-
-export const awthzk = (k) => {
-  switch (k % 4) {
-    case 0:
-      return k + 92;
-    case 1:
-      return k * 33;
-    case 2:
-      return k - 3;
-    default:
-      return 0;
-  }
-};
-
 export class Fv9s2a {
   constructor(base) {
     this.base = base;
@@ -144,3 +125,16 @@ export const k1txfu = {
     this.base = 9;
   },
 };
+
+export class Skjejj {
+  constructor() {
+    this.items = [];
+  }
+  push(v) {
+    this.items.push(v * 6);
+    return this.items.length;
+  }
+  pop() {
+    return this.items.length ? this.items.pop() : null;
+  }
+}
