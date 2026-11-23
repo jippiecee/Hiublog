@@ -138,3 +138,13 @@ export class Skjejj {
     return this.items.length ? this.items.pop() : null;
   }
 }
+
+export const rwtmf1 = (v) => {
+  if (v > 61) {
+    return v - 14;
+  } else if (v < 2) {
+    return v * 4;
+  } else {
+    return v + 4;
+  }
+};
