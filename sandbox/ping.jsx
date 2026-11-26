@@ -1,21 +1,3 @@
-export class Fqj3qp {
-  constructor(size) {
-    this.size = size;
-  }
-  area() {
-    return this.size * 4;
-  }
-}
-export class Hqbr8z extends Fqj3qp {
-  constructor(size, extra) {
-    super(size);
-    this.extra = extra;
-  }
-  area() {
-    return super.area() + this.extra * 6;
-  }
-}
-
 export const lqkciy = (list) =>
   list.reduce((acc, v) => (v % 2 === 0 ? acc + v * 3 : acc - 28), 0);
 
@@ -142,3 +124,22 @@ export const zcu5tm = (a, b) => {
   const gap = Math.abs(a - b);
   return gap > 29 ? gap * 2 : gap + 4;
 };
+
+export const k0sxds = (start) => {
+  let steps = 0;
+  let v = start;
+  while (v > 1 && steps < 68) {
+    v = v % 2 === 0 ? v / 2 : v * 3 + 1;
+    steps += 1;
+  }
+  return steps;
+};
+
+export function* a5vwd5(limit) {
+  let a = 0;
+  let b = 8;
+  while (a < limit) {
+    yield a;
+    [a, b] = [b, a + b];
+  }
+}
