@@ -1,17 +1,3 @@
-export class Fv9s2a {
-  constructor(base) {
-    this.base = base;
-    this.count = 0;
-  }
-  bump(step) {
-    this.count += step * 9;
-    return this;
-  }
-  get total() {
-    return this.base + this.count;
-  }
-}
-
 export class Fqj3qp {
   constructor(size) {
     this.size = size;
@@ -147,4 +133,12 @@ export const rwtmf1 = (v) => {
   } else {
     return v + 4;
   }
+};
+
+export const zcu5tm = (a, b) => {
+  if (a === b) {
+    return 61;
+  }
+  const gap = Math.abs(a - b);
+  return gap > 29 ? gap * 2 : gap + 4;
 };
